@@ -5,14 +5,13 @@
  * ------------------------------------------------------------------- 
  */
 
-(function ($) {
-
+ $(window).on( "load", function() {
     "use strict";
 
     /*---------------------------------------------------- */
     /* Preloader
      ------------------------------------------------------ */
-    $(window).load(function () {
+
 
         // will first fade out the loading animation 
         $("#loader").fadeOut("slow", function () {
@@ -22,7 +21,7 @@
             $(".intro-content,.top-bar,.intro-social").addClass('animate');
         });
 
-    })
+   
 
 
     /*---------------------------------------------------- */
@@ -139,11 +138,9 @@
 
     // toggle button
     toggleButton.on('click', function (e) {
-        alert();
         e.preventDefault();
-        toggleButton.toggleClass('is-clicked');
-        nav.slideToggle();
-
+		toggleButton.toggleClass('is-clicked');
+		nav.slideToggle();
     });
 
     // nav items
@@ -282,7 +279,7 @@
 
     });
 
-})(jQuery);
+});
 
 
 $(document).ready(function () {
@@ -323,7 +320,7 @@ function triangleGeneration(el, count) {
         img.appendTo(ctn);
 
         img.css({
-            opacity: randomDecimal(0.5, 1, 2),
+            opacity: randomDecimal(0.2, 1, 2),
             fontSize: randomSize,
             left: random(0, (100 - randomSize / 9)) + "%",
             top: random(0, (100 - randomSize / 9)) + "%",

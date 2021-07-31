@@ -12,7 +12,7 @@
     <div class="top-bar"  >
         <a class="menu-toggle" href="#"><span><?php esc_html_e('Menu', 'goni'); ?></span></a>
         <div class="logo">
-            <a href="<?php echo site_url()?>"><?php get_bloginfo( 'name' );?></a>
+            <a href="<?php echo site_url()?>"><?php get_bloginfo( 'name' );?>Dev Danidhariya</a>
         </div>
         <nav id="main-nav-wrap">
             <ul class="main-navigation">
