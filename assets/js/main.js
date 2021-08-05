@@ -197,7 +197,7 @@
         });
 
     });
-
+     console.log(goni_data);
 
     /*---------------------------------------------------- */
     /*  Placeholder Plugin Settings
@@ -218,8 +218,9 @@
 
             $.ajax({
                 type: "POST",
-                url: "inc/sendEmail.php",
-                data: $(form).serialize(),
+                url: goni_data.ajaxurl,
+                data: { action: 'contact_form_submit', data: $(form).serialize(), security: goni_data.nonce},
+                
                 beforeSend: function () {
 
                     sLoader.fadeIn();
