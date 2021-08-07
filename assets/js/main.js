@@ -7,7 +7,18 @@
 
  $(window).on( "load", function() {
     "use strict";
-
+      /*---------------------------------------------------- */
+    /* Header sticky
+     ------------------------------------------------------ */
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 200) {
+            $(".site-header").addClass("darkHeader");
+        } else {
+            $(".site-header").removeClass("darkHeader");
+        }
+    });
     /*---------------------------------------------------- */
     /* Preloader
      ------------------------------------------------------ */

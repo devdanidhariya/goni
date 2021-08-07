@@ -2756,3 +2756,49 @@ footer .copyright span:last-child::after {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+@media only screen and (min-width:1024px) {
+	.site-header.darkHeader {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	header .top-bar {
+		min-width: 100%;
+		position: static;
+		background: transparent;
+	}
+	.menu-toggle {
+		display: none;
+	}
+	header .logo {
+		display: inline-block;
+	}
+	header .top-bar.animate {
+		animation: none;
+		animation: fadeIn 2s ease;
+    	-webkit-animation: fadeIn 2s ease;
+	}
+	#main-nav-wrap {
+		position: static;
+		width: 80%;
+		float: right;
+	}
+	.main-navigation {
+		display: block!important;
+		background-color: transparent;
+		text-align: right;
+		padding: 10px 30px 10px;
+	}
+	.main-navigation > li {
+		display: inline-block;
+		margin: 0 18px;
+	}
+	.main-navigation > li a {
+		font-size: 16px;
+	}
+	.main-navigation li a:hover {
+		padding-left: 0;
+	}
+	header .logo a {
+		letter-spacing: 1.1px;
+	}
+}
