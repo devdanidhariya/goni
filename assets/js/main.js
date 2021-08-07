@@ -197,13 +197,12 @@
     /*---------------------------------------------------- */
     /* Smooth Scrolling
      ------------------------------------------------------ */
-    $('.menu-item a').on('click', function (e) {
+    $('.menu-item a').on('click', function () {
 
-        e.preventDefault();
+        //e.preventDefault();
 
         var target = this.hash,
                 $target = $(target);
-
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top
         }, 800, 'swing', function () {

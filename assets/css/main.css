@@ -2758,13 +2758,16 @@ footer .copyright span:last-child::after {
 /*# sourceMappingURL=main.css.map */
 
 @media only screen and (min-width:1024px) {
-	.site-header.darkHeader {
+	/* .site-header.darkHeader {
 		background-color: rgba(0, 0, 0, 0.8);
-	}
+	} */
 	header .top-bar {
 		min-width: 100%;
 		position: static;
 		background: transparent;
+	}
+	header.darkHeader {
+		position: static;
 	}
 	.menu-toggle {
 		display: none;
@@ -2779,7 +2782,7 @@ footer .copyright span:last-child::after {
 	}
 	#main-nav-wrap {
 		position: static;
-		width: 80%;
+		width: 60%;
 		float: right;
 	}
 	.menu {
