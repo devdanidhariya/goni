@@ -210,7 +210,6 @@
         });
 
     });
-     console.log(goni_data);
 
     /*---------------------------------------------------- */
     /*  Placeholder Plugin Settings
