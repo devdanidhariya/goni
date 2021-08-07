@@ -10,14 +10,17 @@
       /*---------------------------------------------------- */
     /* Header sticky
      ------------------------------------------------------ */
-    $(window).scroll(function() {    
+    $(window).on('load scroll', function () {
         var scroll = $(window).scrollTop();
-    
-        if (scroll >= 200) {
-            $(".site-header").addClass("darkHeader");
-        } else {
-            $(".site-header").removeClass("darkHeader");
+        
+        var stickyHeader = function() {
+            if (scroll >= 200) {
+                $(".site-header").addClass("darkHeader");
+            } else {
+                $(".site-header").removeClass("darkHeader");
+            }
         }
+        stickyHeader();
     });
     /*---------------------------------------------------- */
     /* Preloader
@@ -145,7 +148,7 @@
     /* Navigation Menu
      ------------------------------------------------------ */
     var toggleButton = $('.menu-toggle'),
-            nav = $('.main-navigation');
+            nav = $('#menu-primary');
 
     // toggle button
     toggleButton.on('click', function (e) {
@@ -194,7 +197,7 @@
     /*---------------------------------------------------- */
     /* Smooth Scrolling
      ------------------------------------------------------ */
-    $('.smoothscroll').on('click', function (e) {
+    $('.menu-item a').on('click', function (e) {
 
         e.preventDefault();
 

@@ -53,6 +53,9 @@ function goni_scripts() {
     );
 
 }
+register_nav_menus( array(  
+    'primary' => __( 'Primary Navigation', 'primary' )
+    ) ); 
 
 add_action('wp_enqueue_scripts', 'goni_scripts');
 
