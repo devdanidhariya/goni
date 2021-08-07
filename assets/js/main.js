@@ -7,7 +7,21 @@
 
  $(window).on( "load", function() {
     "use strict";
-
+      /*---------------------------------------------------- */
+    /* Header sticky
+     ------------------------------------------------------ */
+    $(window).on('load scroll', function () {
+        var scroll = $(window).scrollTop();
+        
+        var stickyHeader = function() {
+            if (scroll >= 200) {
+                $(".site-header").addClass("darkHeader");
+            } else {
+                $(".site-header").removeClass("darkHeader");
+            }
+        }
+        stickyHeader();
+    });
     /*---------------------------------------------------- */
     /* Preloader
      ------------------------------------------------------ */
@@ -134,7 +148,7 @@
     /* Navigation Menu
      ------------------------------------------------------ */
     var toggleButton = $('.menu-toggle'),
-            nav = $('.main-navigation');
+            nav = $('#menu-primary');
 
     // toggle button
     toggleButton.on('click', function (e) {
@@ -183,7 +197,7 @@
     /*---------------------------------------------------- */
     /* Smooth Scrolling
      ------------------------------------------------------ */
-    $('.smoothscroll').on('click', function (e) {
+    $('.menu-item a').on('click', function (e) {
 
         e.preventDefault();
 

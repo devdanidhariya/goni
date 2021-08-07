@@ -15,14 +15,7 @@
             <a href="<?php echo site_url()?>"><?php echo get_bloginfo( 'name' );?></a>
         </div>
         <nav id="main-nav-wrap">
-            <ul class="main-navigation">
-                <li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-                <li><a class="smoothscroll"  href="#about" title="">About</a></li>
-                <li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
-                <li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
-                <!-- <li><a class="smoothscroll"  href="#services" title="">Services</a></li> -->               
-                <li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>
-            </ul>
+            <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
         </nav>
     </div>
     <!-- /top-bar --> 
