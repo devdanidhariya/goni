@@ -1091,7 +1091,7 @@ header .logo a {
 	display: block;
 	text-transform: uppercase;
 	font-family: 'poppins-semibold';
-	font-size: 20px;
+	font-size: 18px;
 	color: #fff;
 	font-weight: 600;
 }
@@ -2782,7 +2782,7 @@ footer .copyright span:last-child::after {
 	}
 	#main-nav-wrap {
 		position: static;
-		width: 60%;
+		width: 65%;
 		float: right;
 	}
 	.menu {
