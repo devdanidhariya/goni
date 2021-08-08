@@ -39,12 +39,12 @@ function goni_scripts() {
 
     
 
-    wp_register_script('goni-main',get_template_directory_uri() . '/assets/js/main.js',array(),true);
-    wp_enqueue_script('goni-main');
+    wp_register_script('goni-main-js',get_template_directory_uri() . '/assets/js/main.js',array());
+    wp_enqueue_script('goni-main-js');
 
     //localize script with custom var
     wp_localize_script(
-        'goni-main',
+        'goni-main-js',
         'goni_data',
         array(
             'ajaxurl' => admin_url('admin-ajax.php'),
@@ -104,39 +104,18 @@ function contact_form_submit_handler(){
         $message .= "Regards,<br>All at $blog_title<br>";
         $message .= site_url();
         // Mail body end
-    
+        
+
+
         $mail = wp_mail($admin_email, $subject, $message, $headers); //Send mail
 
-
-        if (!is_wp_error($mail)) { //check error
-            wp_send_json_success(array('status' => 1), 200);
+        if ($mail) { //check error
+            wp_send_json_success(array('status' => 1,'message' => __('Your message was sent, thank you!', 'goni')));
         } else {
-            wp_send_json_error("Something went wrong. Please try again.");
+            wp_send_json_error(array('status' => 0,'message' => __('Something went wrong. Please try again.', 'goni')));
         }
     else :
-        wp_send_json_error(array('message' => _e('Something went wrong please try again later', 'goni')));
+            wp_send_json_error(array('status' => 0,'message' => __('Something went wrong please try again later', 'goni')));
     endif;
     wp_die();
-
-
-
-
-
-
-
-
-    
-
-    // 
-
-
-
-    wp_die();
-
-
-
-
-
-
-
 }

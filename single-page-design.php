@@ -31,7 +31,7 @@ get_header(); ?>
       <li><a target="_blank" href="https://www.facebook.com/dev.danidhariya.9"><i class="fa fa-facebook"></i></a></li>
       <li><a target="_blank" href="https://twitter.com/devdanidhariya"><i class="fa fa-twitter"></i></a></li>
       <li><a target="_blank" href="https://www.linkedin.com/in/devdanidhariya/"><i class="fa fa-linkedin-square"></i></a></li>
-      <li><a target="_blank" href="https://www.instagram.com/dev_danidhariya/"><i class="fa fa-instagram"></i></a></li>
+      <li><a target="_blank" href="https://www.instagram.com/er_danidhariya/"><i class="fa fa-instagram"></i></a></li>
       <li><a target="_blank" href="mailto:devdanidhariya@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
    </ul>
    <!-- /intro-social -->
@@ -39,14 +39,17 @@ get_header(); ?>
 <!-- /intro -->
 <!-- about section
          ================================================== -->
-<section class="about-anim" id="about">
+<section id="about" class="about-anim" >
    <div class="row section-intro">
       <div class="col-twelve">
          <h5>About</h5>
-         <h1>Let me introduce myself.</h1>
+         <h2>Let me introduce myself.</h2>
          <div class="intro-info">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Devidas.jpg" alt="Profile Picture">
-            <p class="lead">Experienced Back End Developer with a demonstrated history of working in the information technology and services industry. Skilled in Web Services API, Cascading Style Sheets (CSS), PHP, WordPress, and HTML. Graduated from Gujarat Technological University as a B.E (Computer Science).</p>
+            <div class="row">
+               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Devidas.jpg" alt="Profile Picture" />
+               <p class="lead">My name is Devidas Danidhariya. I complited my Becholer of enginering in 2014 in computer enginenring from Gujarat Technological University. I started my career as a WordPress plugin and theme developer when I was in my second year of engineering.</p>
+               <p>After i completed my BE. I join WeTheDevelop as a PHP developer. My last job was at Beard Design(Opposite) Mumbai as Sr WordPress Engineer. In beardesing, we developed most popular websites like the-can, examperper and roomone, etc. Currently, I work with wpoets technology as a <b>Tech Lead</b>.</p>
+            </div>
          </div>
       </div>
    </div>
@@ -54,50 +57,60 @@ get_header(); ?>
    <div class="row about-content">
       <div class="col-six tab-full">
          <h3>Profile</h3>
-         <p>I have 7+ years professional experience as a Wordpress developer, creating responsive front-end development and WordPress websites.</p>
+         <p>I have  7+ year’s experience in backend development. Looking forward to work in a company with great technology exposure. I Love coding and cooking!</p>
          <ul class="info-list">
             <li>
                <strong>Job:</strong>
-               <span>WordPress Developer</span>
+               <span>Tech Lead</span>
             </li>
             <li>
-               <strong>Website:</strong>
-               <span>http://devdas.in/</span>
+               <strong>LANGUAGES:</strong>
+               <span>English, Hindi, Gujarati</span>
             </li>
             <li>
                <strong>Email:</strong>
                <span><a href="mailto:devdanidhariya@gmail.com">devdanidhariya@gmail.com</a></span>
             </li>
          </ul>
+         <ul class="skill-bars">
+            <li>
+               <div class="progress percent90"><span>90%</span></div>
+               <strong>Git</strong>
+            </li>
+            <li>
+               <div class="progress percent50"><span>50%</span></div>
+               <strong>AWS</strong>
+            </li>
+         </ul>
          <!-- /info-list -->
       </div>
       <div class="col-six tab-full">
          <h3>Skills</h3>
-         <p>Strong knowledge of HTML, CSS, Javascript and RWD frameworks, with working knowledge of php and mysql.</p>
+         <p>Strong knowledge of PHP, MySQL, JavaScript and WordPress CMS, with working knowledge of HTML5 and CCS3.</p>
          <ul class="skill-bars">
             <li>
                <div class="progress percent90"><span>90%</span></div>
-               <strong>HTML5</strong>
-            </li>
-            <li>
-               <div class="progress percent85"><span>85%</span></div>
-               <strong>CSS3</strong>
-            </li>
-            <li>
-               <div class="progress percent70"><span>70%</span></div>
-               <strong>JQuery</strong>
-            </li>
-            <li>
-               <div class="progress percent95"><span>95%</span></div>
                <strong>PHP</strong>
             </li>
             <li>
-               <div class="progress percent99"><span>99%</span></div>
+               <div class="progress percent95"><span>95%</span></div>
                <strong>Wordpress</strong>
             </li>
             <li>
                <div class="progress percent90"><span>90%</span></div>
                <strong>MySQL</strong>
+            </li>
+            <li>
+               <div class="progress percent95"><span>95%</span></div>
+               <strong>JavaScript/jQuery</strong>
+            </li>
+            <li>
+               <div class="progress percent50"><span>50%</span></div>
+               <strong>React Native</strong>
+            </li>
+            <li>
+               <div class="progress percent80"><span>80%</span></div>
+               <strong>CSS3/Bootstrap</strong>
             </li>
          </ul>
          <!-- /skill-bars -->
@@ -126,7 +139,7 @@ get_header(); ?>
                   <i class="fa fa fa-briefcase"></i>
                </div>
                <div class="timeline-header">
-                  <h3>Back End Developer</h3>
+                  <h3>Tech Lead</h3>
                   <p>March 2017 - Present</p>
                   <p>Pune, India</p>
                </div>
@@ -141,7 +154,7 @@ get_header(); ?>
                   <i class="fa fa fa-briefcase"></i>
                </div>
                <div class="timeline-header">
-                  <h3>Wordpress Developer</h3>
+                  <h3>PHP/Wordpress Developer</h3>
                   <p>Jan 2016 - Mar 2017</p>
                   <p>Mumbai, India</p>
                </div>
@@ -156,7 +169,7 @@ get_header(); ?>
                   <i class="fa fa fa-briefcase"></i>
                </div>
                <div class="timeline-header">
-                  <h3>Software Engineer</h3>
+                  <h3>PHP Developer</h3>
                   <p>June 2014 - Jan 2017</p>
                   <p>Rajkot, India</p>
                </div>
@@ -210,7 +223,7 @@ get_header(); ?>
       <div class="col-twelve">
 
          <h5>Portfolio</h5>
-         <h1>Check Out Some of My Works.</h1>
+         <h2>Check Out Some of My Works.</h2>
 
          <!-- 	<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p> -->
 
@@ -452,89 +465,89 @@ get_header(); ?>
 
 </section> <!-- /portfolio -->
 
-<!--      <section  id="stats" class="count-up">
+<section  id="stats" class="count-up">
          <div class="row">
             <div class="col-twelve">
-               <div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
-                  <div class="bgrid stat">
+               <div class="block-1-4 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+                  <!-- <div class="bgrid stat">
                      <div class="icon-part">
                         <i class="icon-pencil-ruler"></i>
                      </div>
                      <h3 class="stat-count">
-                        75
+                        50
                      </h3>
                      <h5 class="stat-title">
                         Projects Completed
                      </h5>
-                  </div>
-                   /stat 					
-                  <div class="bgrid stat">
+                  </div> -->
+                   <!-- /stat 					 -->
+                  <!-- <div class="bgrid stat">
                      <div class="icon-part">
                         <i class="icon-users"></i>
                      </div>
                      <h3 class="stat-count">
-                        63
+                        35
                      </h3>
                      <h5 class="stat-title">
                         Happy Clients
                      </h5>
-                  </div>
-                   /stat 
+                  </div> -->
+                   <!-- /stat  -->
                   <div class="bgrid stat">
                      <div class="icon-part">
-                        <i class="icon-badge"></i>
+                        <i class="fa fa-github"></i>
                      </div>
                      <h3 class="stat-count">
-                        3
+                        5
                      </h3>
                      <h5 class="stat-title">
-                        Awards Received
+                       Github repositories
                      </h5>
                   </div>
-                   /stat 									
+                   <!-- /stat 									 -->
                   <div class="bgrid stat">
                      <div class="icon-part">
-                        <i class="icon-light-bulb"></i>
+                        <i class="fa fa-stack-overflow"></i>
                      </div>
                      <h3 class="stat-count">
-                        120
+                        48
                      </h3>
                      <h5 class="stat-title">
-                        Crazy Ideas
+                        Question Answers
                      </h5>
                   </div>
-                   /stat 
+                   <!-- /stat  -->
                   <div class="bgrid stat">
                      <div class="icon-part">
-                        <i class="icon-cup"></i>
+                        <i class="fa fa-wordpress"></i>
                      </div>
                      <h3 class="stat-count">
-                        750
+                        21
                      </h3>
                      <h5 class="stat-title">
-                        Coffee Cups
+                        Replied To WordPress Topics
                      </h5>
                   </div>
-                   /stat 
+                   <!-- /stat  -->
                   <div class="bgrid stat">
                      <div class="icon-part">
                         <i class="icon-clock"></i>
                      </div>
                      <h3 class="stat-count">
-                        2400
+                        14000
                      </h3>
                      <h5 class="stat-title">
                         Hours
                      </h5>
                   </div>
-                   /stat 
+                   <!-- /stat  -->
                </div>
-                /stats-list 
+                <!-- /stats-list  -->
             </div>
-             /twelve 
+             <!-- /twelve  -->
          </div>
-          /row 
-      </section>-->
+          <!-- row  -->
+      </section>
 <!-- /stats -->
 <!-- contact
          ================================================== -->
@@ -542,7 +555,7 @@ get_header(); ?>
    <div class="row section-intro">
       <div class="col-twelve">
          <h5>Contact</h5>
-         <h1>I'd Love To Hear From You.</h1>
+         <h2>I'd Love To Hear From You.</h3>
          <p class="lead">I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it.</p>
       </div>
    </div>
@@ -584,7 +597,7 @@ get_header(); ?>
          </div>
          <!-- contact-success -->
          <div id="message-success">
-            <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+            <i class="fa fa-check"></i><br>
          </div>
       </div>
       <!-- /col-twelve -->
@@ -610,7 +623,7 @@ get_header(); ?>
             <i class="icon-phone"></i>
          </div>
          <h5>Call Me At</h5>
-         <p>Phone: <a href="tel:+9033240723">9033240723</a></p>
+         <p>Phone: <a href="tel:+91 9033240723">+91 90332 40723</a></p>
       </div>
    </div>
    <!-- /contact-info -->

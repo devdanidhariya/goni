@@ -26,7 +26,7 @@
 		    </div>
 		    <div class="col-seven tab-full">
 		       <div class="copyright">
-		          <span>© Copyright devidas 2021.</span>
+		          <span>&copy; <?php echo  date("Y");?> devidas.in. All Rights Reserved.</span>
 		       </div>
 		    </div>
 		    <div id="go-top">

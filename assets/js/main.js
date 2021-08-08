@@ -234,33 +234,27 @@
                 data: { action: 'contact_form_submit', data: $(form).serialize(), security: goni_data.nonce},
                 
                 beforeSend: function () {
-
                     sLoader.fadeIn();
-
                 },
-                success: function (msg) {
+                success: function (res) {
 
                     // Message was sent
-                    if (msg == 'OK') {
+                    if (res.data.status) { 
                         sLoader.fadeOut();
                         $('#message-warning').hide();
                         $('#contactForm').fadeOut();
-                        $('#message-success').fadeIn();
+                        $('#message-success').html(res.data.message).fadeIn();
                     }
                     // There was an error
                     else {
                         sLoader.fadeOut();
-                        $('#message-warning').html(msg);
-                        $('#message-warning').fadeIn();
+                        $('#message-warning').html(res.data.message).fadeIn();
                     }
 
                 },
                 error: function () {
-
                     sLoader.fadeOut();
-                    $('#message-warning').html("Something went wrong. Please try again.");
-                    $('#message-warning').fadeIn();
-
+                    $('#message-warning').html("Something went wrong. Please try again.").fadeIn();
                 }
 
             });
