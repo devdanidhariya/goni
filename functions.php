@@ -52,12 +52,22 @@ function goni_scripts() {
         )
     );
 
-}
-register_nav_menus( array(  
-    'primary' => __( 'Primary Navigation', 'primary' )
-    ) ); 
+} 
 
 add_action('wp_enqueue_scripts', 'goni_scripts');
+
+register_nav_menus( array(  
+    'primary' => __( 'Primary Navigation', 'primary' )
+    ) );
+
+/*
+ * Let WordPress manage the document title.
+ * This theme does not use a hard-coded <title> tag in the document head,
+ * WordPress will provide it for us.
+ */
+add_theme_support( 'title-tag' );
+
+
 
 //Ajax hooks 
 add_action('wp_ajax_contact_form_submit', 'contact_form_submit_handler');

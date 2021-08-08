@@ -95,7 +95,7 @@
                         duration: 4000,
                         easing: 'swing',
                         step: function (curValue) {
-                            $this.text(Math.ceil(curValue));
+                            $this.text(Math.ceil(curValue)+"+");
                         }
                     });
                 });
