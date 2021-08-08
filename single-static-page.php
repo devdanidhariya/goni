@@ -16,7 +16,7 @@ get_header(); ?>
       <div class="row">
          <div class="col-twelve">
             <h5>Hello, World.</h5>
-            <h1>I'm Devidas</h1>
+            <h1>I'm Dev Danidhariya</h1>
             <p class="intro-position">
                <span>Tech lead</span>
                <span>WordPress Enthusiast​</span>
