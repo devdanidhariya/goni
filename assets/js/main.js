@@ -323,7 +323,7 @@ function triangleGeneration(el, count) {
     for (i = 0; i < count; i++) {
         var randomSize = random(10, 26);
 
-        var img = $('<span class="letter-gen">D</span>');
+        var img = $('<span class="letter-gen">'+randomKeyWords()+'</span>');
         img.appendTo(ctn);
 
         img.css({
@@ -349,3 +349,9 @@ function randomDecimal(min, max, precision) {
     return random.toFixed(precision);
 }
 
+
+
+function randomKeyWords() {
+    let items = ['PHP','JavaScript','HTML','CSS','React Native','cordova','Bootstrap','jQuery','Wordpress','Shopify','Codeigniter','API gateways','AWS','EC2','S3','Git','Nginx','EasyEngine'];
+    return items[Math.floor(Math.random()*7)];
+}
