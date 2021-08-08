@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Single static page
+ * Template Name: single page design
  *
  * @package WordPress
  * @subpackage Twenty_Fourteen
