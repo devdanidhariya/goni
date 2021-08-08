@@ -20,7 +20,7 @@
 		          <li><a target="_blank" href="https://www.facebook.com/dev.danidhariya.9"><i class="fa fa-facebook"></i></a></li>
 		          <li><a target="_blank" href="https://twitter.com/devdanidhariya"><i class="fa fa-twitter"></i></a></li>
 		          <li><a target="_blank" href="https://www.linkedin.com/in/devdanidhariya/"><i class="fa fa-linkedin-square"></i></a></li>
-		          <li><a target="_blank" href="https://www.instagram.com/dev_danidhariya/"><i class="fa fa-instagram"></i></a></li>
+		          <li><a target="_blank" href="https://www.instagram.com/er_danidhariya/"><i class="fa fa-instagram"></i></a></li>
 		          <li><a target="_blank" href="mailto:devdanidhariya@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
 		       </ul>
 		    </div>
