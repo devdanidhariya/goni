@@ -1,12 +1,13 @@
 <?php
-
 /**
+ * THis is custume template file
+ * 
  * Template Name: single page design
- *
- * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
- */
+ * 
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * 
+ * @package Goni
+*/
 
 get_header(); ?>
 <!-- intro section ================================================== -->

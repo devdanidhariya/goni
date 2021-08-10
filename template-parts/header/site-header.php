@@ -2,9 +2,7 @@
 /**
  * Displays the site header.
  *
- * @package WordPress
- * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @package Goni
  */
 
 $wrapper_classes  = 'site-header';
@@ -14,7 +12,7 @@ $wrapper_classes .= has_nav_menu( 'primary' ) ? ' has-menu' : '';
 ?>
 
 <!-- header ================================================== -->
-<header id="masthead" class="<?php echo esc_attr( $wrapper_classes ); ?>" role="banner">
+<header  class="<?php echo esc_attr( $wrapper_classes ); ?>" role="banner">
   <?php get_template_part( 'template-parts/header/site-nav' ); ?> 
 </header>
 <!-- /header -->

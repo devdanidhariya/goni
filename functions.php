@@ -3,16 +3,6 @@
 /**
  * Enqueue scripts and styles.
  *
- * @since Twenty Twenty-One 1.0
- *
- * @return void
- */
-
-/**
- * Enqueue scripts and styles.
- *
- * @since Twenty Twenty-One 1.0
- *
  * @return void
  */
 function goni_scripts() {
